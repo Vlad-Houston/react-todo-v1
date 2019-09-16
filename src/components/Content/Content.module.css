@@ -1,0 +1,8 @@
+.Content {
+  height: 600px;
+  width: 400px;
+  margin: 100px auto;
+  border: 4px solid #ccc;
+  display: flex;
+  flex-flow: column nowrap;
+}

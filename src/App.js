@@ -2,12 +2,12 @@ import React from "react";
 import "./App.css";
 import Content from "./components/Content/Content";
 
-function App() {
+const App = props => {
   return (
     <div className="App">
-      <Content />
+      <Content onClick={props.onClick} appState={props.appState} />
     </div>
   );
-}
+};
 
 export default App;

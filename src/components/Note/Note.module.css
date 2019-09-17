@@ -14,3 +14,24 @@
 .Note p {
   padding-right: 10px;
 }
+
+.deleteButton,
+.editButton {
+  background: #f44336;
+  width: auto;
+  font: 400 12px/30px sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.editButton {
+  background: #fbcc00;
+}
+
+.buttonConteiner {
+  width: auto;
+  display: flex;
+  flex-flow: row nowrap;
+}

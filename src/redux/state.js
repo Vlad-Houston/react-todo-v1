@@ -18,4 +18,9 @@ export let addNewNote = note => {
   rerenderEntireTree(state);
 };
 
+export let deleteNote = id => {
+  let idNote = id - 1;
+  state.notes.splice(0, id);
+};
+
 export default state;

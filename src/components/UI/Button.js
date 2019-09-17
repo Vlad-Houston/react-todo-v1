@@ -3,9 +3,11 @@ import style from "./Button.module.css";
 
 const Button = props => {
   return (
-    <button onClick={props.onClick} className={style.Button}>
-      {props.children}
-    </button>
+    <div className={style.Button}>
+      <button onClick={props.onClick} className={props.className}>
+        {props.children}
+      </button>
+    </div>
   );
 };
 

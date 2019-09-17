@@ -13,9 +13,16 @@ const Content = props => {
 
   return (
     <div className={style.Content}>
-      <textarea cols="auto" rows="5" ref={newNote}></textarea>
-      <Button onClick={addNote}>Добавить</Button>
-      <Note appState={props.appState} />
+      <textarea
+        cols="auto"
+        rows="5"
+        ref={newNote}
+        placeholder="Запишите что-то"
+      ></textarea>
+      <Button onClick={addNote} className={style.addButton}>
+        Добавить
+      </Button>
+      <Note appState={props.appState} deleteNote={props.deleteNote} />
     </div>
   );
 };

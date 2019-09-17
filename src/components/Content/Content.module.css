@@ -1,13 +1,25 @@
 .Content {
-  height: 600px;
-  width: 400px;
-  margin: 100px auto;
+  min-height: 600px;
+  width: 600px;
+  margin: auto;
   padding: 10px;
-  border: 4px solid #ccc;
+  border: 1px solid #ccc;
+  box-shadow: 11px 22px 58px -23px rgba(0, 0, 0, 0.75);
+  border-radius: 1% 1% 1% 1% / 1% 1% 1% 1%;
   display: flex;
   flex-flow: column nowrap;
 }
 
 .Content textarea {
   resize: none;
+}
+
+.addButton {
+  background: #34cc6f;
+  width: 200px;
+  font: 400 14px/50px sans-serif;
+  border-radius: 5px;
+  margin: 10px auto;
+  cursor: pointer;
+  outline: none;
 }

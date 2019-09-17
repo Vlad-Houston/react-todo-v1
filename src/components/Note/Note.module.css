@@ -1,5 +1,16 @@
 .Note {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.Note li {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.Note p {
+  padding-right: 10px;
 }

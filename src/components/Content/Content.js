@@ -13,7 +13,7 @@ const Content = props => {
 
   return (
     <div className={style.Content}>
-      <textarea cols="30" rows="10" ref={newNote}></textarea>
+      <textarea cols="auto" rows="5" ref={newNote}></textarea>
       <Button onClick={addNote}>Добавить</Button>
       <Note appState={props.appState} />
     </div>

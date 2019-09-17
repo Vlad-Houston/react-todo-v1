@@ -1,14 +1,16 @@
 import { rerenderEntireTree } from "../rerender";
 
 let state = {
-  notes: [{ note: "записка 1" }]
+  notes: []
 };
 
 export let addNewNote = note => {
   let newNote = {
     note: note
   };
-  state.notes.push(newNote);
+  if (note !== "") {
+    state.notes.push(newNote);
+  }
   rerenderEntireTree(state);
 };
 

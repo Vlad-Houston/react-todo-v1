@@ -8,7 +8,7 @@ const Note = props => {
       {props.appState.notes.map((value, index) => {
         return (
           <li key={index}>
-            <p>{value.note}</p>
+            <p>{value.id + ". " + value.note}</p>
             <Button onClick={props.delete}>Удалить</Button>
           </li>
         );

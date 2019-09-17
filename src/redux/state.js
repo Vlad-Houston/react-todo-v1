@@ -1,7 +1,7 @@
 import { rerenderEntireTree } from "../rerender";
 
 let state = {
-  notes: [{ note: "" }]
+  notes: [{ note: "записка 1" }]
 };
 
 export let addNewNote = note => {

@@ -4,10 +4,16 @@ import Button from "../UI/Button";
 
 const Note = props => {
   return (
-    <div className={style.Note}>
-      <h1>{props.appState}Нотатка</h1>
-      <Button onClick={props.delete}>Удалить</Button>
-    </div>
+    <ul className={style.Note}>
+      {props.appState.notes.map((value, index) => {
+        return (
+          <li key={index}>
+            {value.note}
+            <Button onClick={props.delete}>Удалить</Button>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 

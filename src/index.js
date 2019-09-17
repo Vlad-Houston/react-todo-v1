@@ -1,6 +1,6 @@
+import { rerenderEntireTree } from "./rerender";
 import state from "./redux/state";
 import * as serviceWorker from "./serviceWorker";
-import { rerenderEntireTree } from "./rerender";
 
 rerenderEntireTree(state);
 

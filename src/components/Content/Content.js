@@ -7,7 +7,6 @@ const Content = props => {
   let newNote = React.createRef();
 
   let addNote = () => {
-    alert(newNote.current.value);
     props.onClick(newNote.current.value);
     newNote.current.value = "";
   };

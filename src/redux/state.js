@@ -20,7 +20,7 @@ export let addNewNote = note => {
 
 export let deleteNote = id => {
   let idNote = id - 1;
-  state.notes.splice(0, id);
+  state.notes.splice(0, idNote);
 };
 
 export default state;
